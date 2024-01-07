@@ -1,0 +1,323 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent;
+  
+
+}
+
+a {     
+        color:rgb(160, 156, 156);
+    text-decoration: none;
+    transition: 0.4s ease;
+
+}
+
+a:hover{
+
+    color:white;
+    
+}
+
+ul {
+    size: 50px;
+list-style: none;
+}
+
+.active{
+    color: blue; 
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    width: 100%;
+    justify-content: space-between;     
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+
+     
+}
+
+.nav-link li{
+    margin:0 30px;
+
+
+
+}
+
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(./alt\ background.jpg);
+    background-position: bottom;
+    background-size:cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+} 
+ 
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: blue;
+    margin: 10px auto;
+    border-radius: 5px;
+    }
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}   
+.ctn{
+    padding: 8px 15px;
+    background: #445f5c8c;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #484872;
+}
+
+
+.row{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.image{
+
+width: 500px;
+height: 350px;
+}
+
+
+.event .row{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3.5min;
+    color: #484872;
+    margin: 10px;
+}
+
+
+p {
+    color: #7c7c7c;
+    padding:0px 40px;
+
+}
+
+.event .ctn{
+    margin-top: 30px;
+}
+ 
+
+body, html{
+    overflow-x: hidden;
+}
+
+
+.explore{
+width: 100%;
+height: 100vh;
+margin-top: 40px;
+background-image: url(./travel\ image.avif);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+
+
+}
+
+.explore-content{
+    width: 50%;
+    padding: 80px;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-content > h1{
+    font-size: 6vmin;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(233, 216, 216);
+    margin-bottom: 20px;
+   
+}
+
+.explore-content > p{
+
+    color: whitesmoke;
+}
+
+.explore-content > .ctn{
+    margin-top: 40px;
+    width: 200px;
+    position: relative;
+    align-self: center;
+
+}
+
+
+.tours{
+    margin-top: 80px;
+}
+
+.content-col{
+    width: 40%;
+}
+
+.image-col{
+    width: 60%;
+}
+
+.content-col h1{
+    font: bold;
+    font-size: 6vmin;
+    font-family: serif;
+    color: #484872;
+    text-align: center;
+}
+
+
+.content-col .line{
+    margin-left: auto;
+    
+}
+
+.content-col p{
+    padding: o;
+    text-align: center;
+}
+
+.content-col .ctn{
+margin-top: 15px;
+}
+
+.tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+
+
+.image-gallery img{
+width: 300px;
+    margin: 10px;
+    
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #151418;
+    text-align: center;
+}
+
+.footer p{
+    color: whitesmoke;
+    margin: 10px auto;
+    
+}
+
+
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo {
+        positioin: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-link {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #484872;
+    margin-top: -900px;
+    transition: all 0.4s ease;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+ .nav-link li{
+    margin: 30px auto;}
+}
+
