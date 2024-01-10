@@ -8,8 +8,8 @@
 
 }
 
-a {     
-        color:rgb(160, 156, 156);
+a {     font-size: 18px;
+        color:rgb(233, 129, 129);
     text-decoration: none;
     transition: 0.4s ease;
 
@@ -17,14 +17,21 @@ a {
 
 a:hover{
 
-    color:white;
+    color:rgb(255, 255, 255);
     
 }
 
 ul {
+    font-size: 16px;
     size: 50px;
 list-style: none;
 }
+
+
+ul > li{
+font-size: 18px;
+}
+
 
 .active{
     color: blue; 
@@ -32,7 +39,9 @@ list-style: none;
     font-weight: bold;
 }
 
-
+p{
+    text-align: center;
+}
 
 
 .navbar{
@@ -103,6 +112,11 @@ header{
     background: #445f5c8c;
     border-radius: 30px;
     color: whitesmoke;
+    transition: 0.6s; ease-in-out;
+}
+
+.ctn:hover{
+    color: black;
 }
 
 .menu-btn{
@@ -303,6 +317,16 @@ width: 300px;
         top: 30px;
         left: 30px;
     }
+
+
+    .row {
+        flex-direction: column; 
+      }
+    
+      .col {
+        margin-bottom: 20px; 
+      }
+
     .nav-link {
     flex-direction: column;
     width: 100%;
@@ -313,6 +337,7 @@ width: 300px;
     transition: all 0.4s ease;
     }
 
+    
     .mobile-menu{
         margin-top: 0px;
         border-bottom-right-radius: 30%;
